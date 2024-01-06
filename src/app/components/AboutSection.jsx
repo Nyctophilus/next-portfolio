@@ -41,7 +41,7 @@ const AboutSection = () => {
             className="text-base lg:text-lg"
           >
             I graduated from Engineering Faculty, computer major. I got B-Eng
-            Degree with total degree: 'B+'
+            Degree with total degree: &apos;B+&apos;
           </motion.p>
           <motion.p
             initial={{ opacity: 0, scale: 0.5 }}
@@ -50,7 +50,7 @@ const AboutSection = () => {
             className="text-base lg:text-lg"
           >
             Awkwardly, I love Javascript! I keen on learning new Techs and
-            tools. I dedicate -easily- 6h/day. You can say it's more like a
+            tools. I dedicate -easily- 6h/day. You can say it&apos;s more like a
             hobbit to me. Also reading self-development & tech books has become
             one of my lastest interests!💡
           </motion.p>
@@ -62,8 +62,8 @@ const AboutSection = () => {
           >
             My graduation project was in AI & Machine learning specialization.
             GANS model to colorize grey scale videos based on Generative
-            adversarial networks deep learning techniques. I got grade 'A' on
-            the project
+            adversarial networks deep learning techniques. I got grade
+            &apos;A&apos; on the project
           </motion.p>
 
           <Tabs />

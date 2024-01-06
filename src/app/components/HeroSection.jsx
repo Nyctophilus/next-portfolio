@@ -37,10 +37,10 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I'm Computer Engineering graduate specializing in Web Development. I
-            fond of creating beautiful fluid eye-pleasing websites. I'm a highly
-            self-motivated Agilest developer, Looking forward to be MERN Stack
-            developer.
+            I&apos;m Computer Engineering graduate specializing in Web
+            Development. I fond of creating beautiful fluid eye-pleasing
+            websites. I&apos;m a highly self-motivated Agilest developer,
+            Looking forward to be MERN Stack developer.
           </p>
           <div>
             <Link
