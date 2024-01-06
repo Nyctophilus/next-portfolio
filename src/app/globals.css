@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+::selection {
+  background-color: rgb(234 88 12 / 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, cursive, "Courier New",
+    Courier, monospace;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.list {
+  mask: linear-gradient(90deg, transparent, white 10%, white 85%, transparent);
+}
+
+.list > li {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(71 85 105 / 0.8);
+  padding: 0.2rem 0.8rem;
+  border-radius: 2rem;
+  /* animation: scroll linear 10s infinite alternate; */
+}
+
+.list > li:hover {
+  border-color: rgb(249 115 22);
+  color: rgb(249 115 22);
+}
+
+/* @keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translate(calc(50% - 5rem));
+  }
+} */
