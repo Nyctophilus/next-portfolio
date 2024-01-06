@@ -4,6 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import heroImg from "../../../public/images/hero-image.png";
 
 const HeroSection = () => {
   return (
@@ -17,7 +18,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m{" "}
+              Hello, I&apos;m
             </span>
             <br></br>
             <TypeAnimation
@@ -73,7 +74,7 @@ const HeroSection = () => {
               transition={{ duratidon: 0.5 }}
             >
               <Image
-                src="/images/hero-image.png"
+                src={heroImg}
                 alt="hero image"
                 className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 width={450}

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Tabs from "./Tabs/Tabs";
+import aboutImg from "../../../public/images/about-image.png";
 
 const AboutSection = () => {
   return (
@@ -18,11 +19,12 @@ const AboutSection = () => {
           whileTap={{ scale: 0.9 }}
         >
           <Image
-            src="/images/about-image.png"
+            src={aboutImg}
             width={500}
             height={500}
             loading={"lazy"}
             alt="about me image"
+            className="rounded-2xl"
           />
         </motion.figure>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
