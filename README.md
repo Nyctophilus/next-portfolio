@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# <a>Portfolio <img src="https://media.giphy.com/media/Ie3U6gTmbY4KTQtOPJ/giphy.gif" width="30px" style="max-width: 100%;"></a>
 
-## Getting Started
+## My Personal Portfolio
 
-First, run the development server:
+### Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- My personal portfolio. I've tried to gather all the tricks & workarounds I learned so far, So it will serve as a showcase of my skills in the present!
+- The App utilizes CRUD operations in the contact form. Also, the Idle state for the side controllers and many more js implemented functionalities are listed below.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<br>
+<br>
+<br>
 
-## Learn More
+#### Contact
 
-To learn more about Next.js, take a look at the following resources:
+🤩 Leave a :star:&nbsp;if you like it, Please!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+📫 Please hit me up at mohammed.yuossry@gmail.com if you have any feedback or improvements.
