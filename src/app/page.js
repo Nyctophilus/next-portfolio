@@ -1,16 +1,24 @@
 "use client";
 import dynamic from "next/dynamic";
-const HeroSection = dynamic(() => import("./components/HeroSection"));
-const ProjectsSection = dynamic(() =>
-  import("./components/Projects/ProjectsSection")
+const HeroSection = dynamic(() => import("./components/HeroSection"), {
+  ssr: false,
+});
+const ProjectsSection = dynamic(
+  () => import("./components/Projects/ProjectsSection"),
+  { ssr: false }
 );
-const AboutSection = dynamic(() => import("./components/AboutSection"));
+const AboutSection = dynamic(() => import("./components/AboutSection"), {
+  ssr: false,
+});
 
-const AchievementsSection = dynamic(() =>
-  import("./components/AchievementsSection")
+const AchievementsSection = dynamic(
+  () => import("./components/AchievementsSection"),
+  { ssr: false }
 );
-const EmailSection = dynamic(() => import("./components/EmailSection"));
-const Footer = dynamic(() => import("./components/Footer"));
+const EmailSection = dynamic(() => import("./components/EmailSection"), {
+  ssr: false,
+});
+const Footer = dynamic(() => import("./components/Footer"), { ssr: false });
 
 import Navbar from "./components/Navbar/Navbar";
 import StarsBg from "./components/StarsBg/StarsBg";
