@@ -9,14 +9,14 @@ import heroImg from "../../../public/images/hero-image.png";
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+      <div className="flex flex-col-reverse lg:flex-row gap-6 lg:gap-12">
         <motion.div
+          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-3xl lg:text-5xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hello, I&apos;m
             </span>
@@ -24,24 +24,30 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 "Muhammed Yousry",
-                3000,
+                5000,
                 "Web Developer",
                 1000,
-                "Next | React | Tailwind",
-                1000,
-                "Computer Engineer",
+                "Nextjs",
                 500,
+                "Reactjs",
+                500,
+                "Tailwind",
+                500,
+                "Mongoose",
+                500,
+                "Computer Engineer",
+                3000,
               ]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="text-[#ADB7BE] text-base sm:text-sm mb-6 lg:text-lg">
             I&apos;m Computer Engineering graduate specializing in Web
             Development. I fond of creating beautiful fluid eye-pleasing
-            websites. I&apos;m a highly self-motivated Agilest developer,
-            Looking forward to be MERN Stack developer.
+            websites. I&apos;m a highly self-motivated Agilest developer, I
+            create full-stack web apps by (Next14|Tailwind|Mongoose)
           </p>
           <div>
             <Link
@@ -62,10 +68,10 @@ const HeroSection = () => {
           </div>
         </motion.div>
         <motion.div
+          className="col-span-4 place-self-center mt-4 lg:mt-0"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <motion.span

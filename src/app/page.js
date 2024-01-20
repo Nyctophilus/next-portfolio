@@ -1,27 +1,18 @@
-"use client";
 import dynamic from "next/dynamic";
-const HeroSection = dynamic(() => import("./components/HeroSection"), {
-  ssr: false,
-});
-const ProjectsSection = dynamic(
-  () => import("./components/Projects/ProjectsSection"),
-  { ssr: false }
-);
-const AboutSection = dynamic(() => import("./components/AboutSection"), {
-  ssr: false,
-});
+import AboutSection from "./components/AboutSection";
+import EmailSection from "./components/EmailSection";
+import Footer from "./components/Footer";
+import HeroSection from "./components/HeroSection";
+import Navbar from "./components/Navbar/Navbar";
+import ProjectsSection from "./components/Projects/ProjectsSection";
+import StarsBg from "./components/StarsBg/StarsBg";
 
 const AchievementsSection = dynamic(
   () => import("./components/AchievementsSection"),
-  { ssr: false }
+  {
+    ssr: false,
+  }
 );
-const EmailSection = dynamic(() => import("./components/EmailSection"), {
-  ssr: false,
-});
-const Footer = dynamic(() => import("./components/Footer"), { ssr: false });
-
-import Navbar from "./components/Navbar/Navbar";
-import StarsBg from "./components/StarsBg/StarsBg";
 
 export default function Home() {
   return (

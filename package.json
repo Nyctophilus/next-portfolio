@@ -10,13 +10,14 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "firebase": "^10.7.1",
+    "firebase": "^10.7.2",
     "framer-motion": "^10.16.1",
     "next": "14.0.4",
     "react": "^18",
     "react-animated-numbers": "^0.17.1",
     "react-dom": "^18",
-    "react-type-animation": "^3.1.0"
+    "react-type-animation": "^3.1.0",
+    "resend": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

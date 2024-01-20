@@ -114,14 +114,12 @@ const projectsData = [
   },
 ];
 
+const tags = ["all", "next", "react", "express", "uI"];
+
 const ProjectsSection = () => {
   const [tag, setTag] = useState("all");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
-  const handleTagChange = (newTag) => {
-    setTag(newTag);
-  };
 
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
@@ -138,31 +136,14 @@ const ProjectsSection = () => {
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="all"
-          isSelected={tag === "all"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="next"
-          isSelected={tag === "next"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="react"
-          isSelected={tag === "react"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="express"
-          isSelected={tag === "express"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="uI"
-          isSelected={tag === "uI"}
-        />
+        {tags.map((el) => (
+          <ProjectTag
+            key={el}
+            name={el}
+            isSelected={tag === el}
+            setTag={setTag}
+          />
+        ))}
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
