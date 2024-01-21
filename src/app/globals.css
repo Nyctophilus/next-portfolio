@@ -17,16 +17,30 @@
 }
 
 ::selection {
-  background-color: rgb(234 88 12 / 0.2);
+  background-color: #85490155;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#f97316;
+  border: 2px solid var(--background-start-rgb);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-start-rgb);
+}
+
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, cursive, "Courier New",
-    Courier, monospace;
+  font-family: Comic Sans MS, Comic Sans, cursive;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -34,6 +48,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    overflow-x: hidden;
 }
 
 .list {

@@ -96,7 +96,7 @@ const EmailSection = () => {
           </Link>
         </div>
       </div>
-      <div className="grid">
+      <div className="grid z-10">
         {emailSubmitted.isSubmitted ? (
           <p className="text-green-500 text-sm mt-2 self-center justify-self-center text-center w-[50%]">
             Hello {emailSubmitted.user.username}, thank you for reaching out!
