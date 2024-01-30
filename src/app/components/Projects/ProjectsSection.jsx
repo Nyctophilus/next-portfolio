@@ -6,6 +6,17 @@ import { motion } from "framer-motion";
 
 const projectsData = [
   {
+    id: "dsad121",
+    title: "Blogly",
+    description:
+      "Blogy is a fully functional blogs webiste. Authentication implemented with next-auth (github & credentials) providers, you can register, login, log out and create new blogs. Users can only update or delete existing ones that they have published. It allows users to create, read and share their thoughts with the world. Users can sign up or log in using email and password authentication or their GitHub accounts. Once logged in they are able to view all published blogs.",
+    image:
+      "https://github.com/Nyctophilus/blogly/raw/master/public/preview1.png",
+    tag: ["all", "next", "react"],
+    gitUrl: "https://github.com/Nyctophilus/blogly",
+    previewUrl: "https://blogly-fayad.vercel.app/",
+  },
+  {
     id: 1,
     title: "React DashBoard",
     description:
