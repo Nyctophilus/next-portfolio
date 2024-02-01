@@ -152,7 +152,7 @@ const ProjectsSection = () => {
       <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
-            key={index}
+            key={project.id}
             whileInView={{
               x: [index % 2 ? -50 : 50, 0],
               y: [20, 0],
