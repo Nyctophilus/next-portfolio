@@ -6,6 +6,7 @@
 
 - [Overview](#overview)
 - [Stack](#stack)
+- [up-to-do](#up-to-do)
 - [Contact](#contact)
 
 ### Overview
@@ -31,6 +32,14 @@
 <br>
 <br>
 
+
+#### up-to-do
+- [ ] sidebar
+- [ ] adjust linking sections postion when press on navLink, stop at 100px-ish top of the setion
+- [ ] navbar transparency
+- [ ] footer typography
+- [ ] connect to db to create projects something like (admin dashboard)
+
 #### Contact
 
 🤩 Leave a :star:&nbsp;if you like it, Please!
@@ -38,3 +47,5 @@
 <br>
 
 📫 Please hit me up at mohammed.yuossry@gmail.com if you have any feedback or improvements.
+
+
